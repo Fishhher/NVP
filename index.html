@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Психологическая устойчивость военнослужащих</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" type="image/png" href="./imgs/logohead.png">
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <img src="./imgs/logo.jpeg" alt="Логотип" class="logo" />
+          <span class="college-name">«Костанайский политехнический высший колледж»</span>
+        </div>
+
+        <div class="header-center">
+          «Психологическая устойчивость военнослужащих»
+        </div>
+
+        <nav class="header-right">
+          <a href="#" onclick="openTitlePage()">Титульный лист</a>
+          <a href="#" onclick="openAnnotation()">Аннотация</a>
+          <a href="#" onclick="openContents()">Содержание</a>
+          <a href="#" onclick="openExplanatoryNote()">Пояснительная записка</a>
+          <a href="#" onclick="openMethodical()">Методическое сопровождение</a>
+          <a href="#" onclick="openCalendarPlan()">Календарно-тематическое планирование</a>
+          <a href="#" onclick="openGlossary()">Глоссарий</a> 
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container" id="values-page">
+        <div class="values">
+        </div>
+      </div>
+
+      <div class="container" id="lesson-content" style="display:none;">
+        <h2 id="lesson-title">Занятие</h2>
+        <div id="lesson-text"></div>
+        <button class="back-btn" onclick="goBack()">⬅ Назад</button>
+      </div>
+
+      <div class="container" id="literature-content" style="display:none;">
+        <h2>Использованная литература</h2>
+        <div id="literature-text"></div>
+        <button class="back-btn" onclick="goBack()">⬅ Назад</button>
+      </div>
+    </main>
+
+    <footer>
+      <!-- настоящие разрабы имранбека -->
+      Разработчики: Нурканов М.К. | Фатхудинов Р.Р.
+    </footer>
+  </div>
+
+  <script src="./lessons.js"></script>
+</body>
+</html>
